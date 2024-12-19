@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    padding: 20px;
+}
+
+.user-container {
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1500px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Flexbox container for horizontal cards */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+}
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+    /* Minimum width to keep the cards looking good */
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#delete-account-form button {
+    background-color: #f44336;
+}
+
+#delete-account-form button:hover {
+    background-color: #e53935;
+}
+
+section#account-requests button {
+    background-color: #2196F3;
+}
+
+section#account-requests button:hover {
+    background-color: #1e88e5;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        /* Stack cards vertically on smaller screens */
+    }
+
+    .user-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}

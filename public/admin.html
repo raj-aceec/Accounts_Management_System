@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h2>Admin Dashboard</h2>
+        <div class="card-container">
+            <div class="row">
+                <section id="customer-list">
+                    <h3>Customer List</h3>
+                    <table id="customers-table">
+                        <thead>
+                            <tr>
+                                <th>Account Number</th>
+                                <th>Account Name</th>
+                                <th>Balance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="update-user">
+                    <h3>Update User</h3>
+                    <form id="update-user-form">
+                        <input type="text" id="update-username" placeholder="Username to Update" required>
+                        <input type="text" id="new-username-update" placeholder="New Username">
+                        <input type="password" id="new-password-update" placeholder="New Password">
+                        <select id="new-role-update">
+                            <option value="user">User</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                        <button type="submit">Update User</button>
+                    </form>
+                </section>
+            </div>
+            <div class="row">
+                <section id="manage-users">
+                    <h3>Add Users</h3>
+                    <form id="create-user-form">
+                        <input type="text" id="new-username" placeholder="Username" required>
+                        <input type="password" id="new-password" placeholder="Password" required>
+                        <select id="new-role">
+                            <option value="user">User</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                        <button type="submit">Create User</button>
+                    </form>
+                </section>
+                <section>
+                    <h3>Existing Users</h3>
+                    <div id="user-list">
+                        <ul id="user-list-ul">
+                        </ul>
+                    </div>
+                </section>
+                <section id="account-requests">
+                    <h3>Account Requests</h3>
+                    <div id="requests-list">
+                    </div>
+                </section>
+                <section id="audit-logs">
+                    <h3>Audit Logs</h3>
+                    <div id="audit-logs-list">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="/admin.js"></script>
+</body>
+
+</html>

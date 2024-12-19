@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="/user.css">
+</head>
+<body>
+    <div class="user-container">
+        <h2>User Dashboard</h2>
+        <div class="card-container">
+            <section id="add-account">
+                <h3>Add Account</h3>
+                <form id="add-account-form">
+                    <input type="text" id="account-number" placeholder="Account Number" required>
+                    <input type="text" id="account-name" placeholder="Account Name" required>
+                    <input type="text" id="account-type" placeholder="Account Type" required>
+                    <input type="text" id="balance" placeholder="Balance" required>
+                    <input type="date" id="opening-date" placeholder="Opening Date" required>
+                    <input type="date" id="last-transaction-date" placeholder="Last Transaction Date" required>
+                    <input type="text" id="status" placeholder="Status" required>
+                    <input type="text" id="branch" placeholder="Branch" required>
+                    <button type="submit">Add Account</button>
+                </form>
+            </section>
+            <section id="delete-account">
+                <h3>Delete Account</h3>
+                <form id="delete-account-form">
+                    <input type="text" id="delete-account-number" placeholder="Enter ID to Delete" required>
+                    <button type="submit">Delete Account</button>
+                </form>
+            </section>
+            <section id="account-requests">
+                <h3>Request Account</h3>
+                <form id="request-account-form">
+                    <input type="text" id="request-user-id" placeholder="Enter your userID" required>
+                    <input type="text" id="request-account-number" placeholder="Enter account number to request"
+                        required>
+                    <button type="submit">Send Request</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="/user.js"></script>
+</body>
+
+</html>
